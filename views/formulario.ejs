@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Radio Buttons</title>
+</head>
+<body>
+    <h2>Formulario con Radio Buttons</h2>
+    <p>  <% if(respuesta!=null){%>Ofertas de <%=respuesta%><%}%></p>
+    <form action="/guardar" method="POST">
+        <input type="radio" id="orange" name="respuesta" value="Orange">
+        <label for="orange">Orange</label><br>
+        
+        <input type="radio" id="apple" name="respuesta" value="Apple">
+        <label for="Apple">Apple</label><br>
+        
+        <input type="radio" id="android" name="respuesta" value="Android">
+        <label for="android">Android</label><br>
+        
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script>
+ 
+    </script>
+</body>
+</html>
